@@ -77,6 +77,7 @@ export default function Work() {
           <motion.div
             style={{ opacity: remainingContentOpacity }}
             className="w-[33vw] min-w-full max-w-[492px] h-0 amax-h-[55vh] mt-6 flex flex-wrap"
+            onClick={() => console.log("hey")}
           >
             {Array.from({ length: 10 }).map((_, i) => (
               <div key={i} className="w-1/3 pr-5">
@@ -88,7 +89,22 @@ export default function Work() {
           </motion.div>
         </motion.div>
 
-        <div>asdf</div>
+        <motion.div
+          style={{
+            opacity: remainingContentOpacity,
+          }}
+          className="flex-1 flex flex-col items-center bg-red-500 mt-12"
+        >
+          <div>asdf</div>
+          <div>asdf</div>
+          <div>asdf</div>
+          <div>asdf</div>
+          <div>asdf</div>
+          <div>asdf</div>
+          <div>asdf</div>
+          <div>asdf</div>
+          <div>asdf</div>
+        </motion.div>
       </motion.div>
     </section>
   );
